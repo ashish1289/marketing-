@@ -1,15 +1,26 @@
 export default function PricingSection() {
   return (
-    <section className="bg-[#192233] w-full py-16 px-4 flex flex-col items-center">
+    <section
+      id="pricing"
+      className="bg-[#192233] w-full py-16 px-4 flex flex-col items-center"
+    >
       {/* Header */}
       <div className="max-w-3xl mx-auto flex flex-col items-center mb-12">
         <div className="bg-green-500 rounded-full p-2 mb-4">
-          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+          <svg
+            className="w-6 h-6 text-white"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            viewBox="0 0 24 24"
+          >
             <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
             <path stroke="currentColor" strokeWidth="2" d="M12 8v4m0 4h.01" />
           </svg>
         </div>
-        <h2 className="text-3xl md:text-4xl font-bold text-white text-center">Simple, Transparent Pricing</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-white text-center">
+          Simple, Transparent Pricing
+        </h2>
         <p className="text-gray-300 text-center mt-2">
           Start with affordable messaging solutions at just $9/month. Choose the perfect plan for your business needs, with significant cost savings as you scale.
         </p>
@@ -19,9 +30,13 @@ export default function PricingSection() {
       <div className="w-full flex justify-center mb-12">
         <div className="w-full max-w-3xl bg-gradient-to-br from-[#0e3c3d] to-[#0e3c3d]/80 rounded-2xl shadow-lg p-8 flex flex-col md:flex-row md:items-center md:justify-between">
           <div>
-            <span className="inline-block bg-teal-600 text-white text-xs font-semibold rounded-full px-3 py-1 mb-2">MOST POPULAR</span>
+            <span className="inline-block bg-teal-600 text-white text-xs font-semibold rounded-full px-3 py-1 mb-2">
+              MOST POPULAR
+            </span>
             <h3 className="text-2xl font-bold text-white">STARTER</h3>
-            <p className="text-gray-300 mb-4">Perfect for small businesses getting started with WhatsApp messaging</p>
+            <p className="text-gray-300 mb-4">
+              Perfect for small businesses getting started with WhatsApp messaging
+            </p>
             <div className="flex items-end mb-2">
               <span className="text-3xl font-bold text-white">$9</span>
               <span className="text-gray-300 ml-2 mb-1">/ month</span>
@@ -64,6 +79,7 @@ export default function PricingSection() {
             Start Free Trial
           </button>
         </div>
+
         {/* STANDARD */}
         <div className="bg-[#202b3c] rounded-2xl shadow-lg p-8 flex flex-col">
           <h4 className="text-lg font-bold text-white mb-1">STANDARD</h4>
@@ -85,6 +101,7 @@ export default function PricingSection() {
             Start Free Trial
           </button>
         </div>
+
         {/* ADVANCED */}
         <div className="bg-[#202b3c] rounded-2xl shadow-lg p-8 flex flex-col">
           <h4 className="text-lg font-bold text-white mb-1">ADVANCED</h4>
@@ -106,6 +123,7 @@ export default function PricingSection() {
             Start Free Trial
           </button>
         </div>
+
         {/* ENTERPRISE */}
         <div className="bg-[#202b3c] rounded-2xl shadow-lg p-8 flex flex-col">
           <h4 className="text-lg font-bold text-white mb-1">ENTERPRISE</h4>
@@ -131,5 +149,3 @@ export default function PricingSection() {
     </section>
   );
 }
-
-//jkjfjfljuuyy
