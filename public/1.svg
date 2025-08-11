@@ -1,0 +1,202 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:0.1"/>
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:0.1"/>
+    </linearGradient>
+    
+    <linearGradient id="phoneGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc"/>
+      <stop offset="100%" style="stop-color:#e2e8f0"/>
+    </linearGradient>
+    
+    <linearGradient id="screenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+
+    <linearGradient id="whatsappGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#25d366"/>
+      <stop offset="100%" style="stop-color:#128c7e"/>
+    </linearGradient>
+
+    <!-- Glow filter -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgGradient)"/>
+  
+  <!-- Floating elements in background -->
+  <circle cx="100" cy="100" r="30" fill="#25d366" opacity="0.1"/>
+  <circle cx="700" cy="150" r="25" fill="#3b82f6" opacity="0.1"/>
+  <circle cx="150" cy="450" r="35" fill="#8b5cf6" opacity="0.1"/>
+  <circle cx="650" cy="500" r="20" fill="#f59e0b" opacity="0.1"/>
+
+  <!-- Main smartphone -->
+  <g transform="translate(250, 50)">
+    <!-- Phone body -->
+    <rect x="0" y="0" width="180" height="320" rx="25" ry="25" fill="url(#phoneGradient)" stroke="#cbd5e1" stroke-width="2"/>
+    
+    <!-- Screen -->
+    <rect x="15" y="25" width="150" height="270" rx="15" ry="15" fill="url(#screenGradient)"/>
+    
+    <!-- WhatsApp header -->
+    <rect x="15" y="25" width="150" height="40" rx="15" ry="15" fill="url(#whatsappGreen)"/>
+    
+    <!-- WhatsApp logo in header -->
+    <circle cx="35" cy="45" r="8" fill="white"/>
+    <path d="M28 45 L35 40 L42 45 L35 50 Z" fill="url(#whatsappGreen)"/>
+    
+    <!-- Header text -->
+    <rect x="50" y="40" width="60" height="4" rx="2" fill="white" opacity="0.9"/>
+    <rect x="50" y="48" width="40" height="3" rx="1.5" fill="white" opacity="0.7"/>
+    
+    <!-- Chat messages -->
+    <g transform="translate(25, 80)">
+      <!-- Incoming message -->
+      <rect x="0" y="0" width="90" height="25" rx="12" fill="#374151"/>
+      <rect x="8" y="6" width="50" height="3" rx="1.5" fill="#9ca3af"/>
+      <rect x="8" y="12" width="70" height="3" rx="1.5" fill="#9ca3af"/>
+      <rect x="8" y="18" width="30" height="3" rx="1.5" fill="#9ca3af"/>
+      
+      <!-- Outgoing message -->
+      <rect x="40" y="35" width="90" height="25" rx="12" fill="url(#whatsappGreen)"/>
+      <rect x="48" y="41" width="60" height="3" rx="1.5" fill="white" opacity="0.9"/>
+      <rect x="48" y="47" width="45" height="3" rx="1.5" fill="white" opacity="0.9"/>
+      <rect x="48" y="53" width="25" height="3" rx="1.5" fill="white" opacity="0.7"/>
+      
+      <!-- Incoming message -->
+      <rect x="0" y="70" width="100" height="30" rx="15" fill="#374151"/>
+      <rect x="8" y="78" width="45" height="3" rx="1.5" fill="#9ca3af"/>
+      <rect x="8" y="84" width="75" height="3" rx="1.5" fill="#9ca3af"/>
+      <rect x="8" y="90" width="55" height="3" rx="1.5" fill="#9ca3af"/>
+      
+      <!-- Outgoing message -->
+      <rect x="30" y="110" width="100" height="20" rx="10" fill="url(#whatsappGreen)"/>
+      <rect x="38" y="116" width="70" height="3" rx="1.5" fill="white" opacity="0.9"/>
+      <rect x="38" y="122" width="40" height="3" rx="1.5" fill="white" opacity="0.9"/>
+    </g>
+    
+    <!-- Input area -->
+    <rect x="20" y="270" width="140" height="20" rx="10" fill="#4b5563"/>
+    <circle cx="150" cy="280" r="8" fill="url(#whatsappGreen)"/>
+    <path d="M146 280 L150 276 L154 280 L150 284 Z" fill="white"/>
+  </g>
+
+  <!-- Automation arrows and elements -->
+  <g transform="translate(480, 120)">
+    <!-- API/Automation box -->
+    <rect x="0" y="0" width="120" height="80" rx="10" fill="white" stroke="#e5e7eb" stroke-width="2"/>
+    <rect x="10" y="10" width="100" height="6" rx="3" fill="#3b82f6"/>
+    <text x="60" y="30" text-anchor="middle" fill="#1f2937" font-family="Arial" font-size="12" font-weight="bold">API</text>
+    <text x="60" y="45" text-anchor="middle" fill="#6b7280" font-family="Arial" font-size="10">Automation</text>
+    
+    <!-- Gears -->
+    <g transform="translate(25, 50)">
+      <circle cx="0" cy="0" r="8" fill="#10b981" opacity="0.2"/>
+      <circle cx="0" cy="0" r="5" fill="#10b981"/>
+      <circle cx="20" cy="8" r="6" fill="#3b82f6" opacity="0.2"/>
+      <circle cx="20" cy="8" r="4" fill="#3b82f6"/>
+    </g>
+    
+    <!-- Curved arrow pointing to phone -->
+    <path d="M0 40 Q-50 40 -80 80" stroke="#10b981" stroke-width="3" fill="none" marker-end="url(#arrowhead)" opacity="0.8"/>
+  </g>
+
+  <!-- Excel/Data source -->
+  <g transform="translate(50, 180)">
+    <rect x="0" y="0" width="80" height="60" rx="5" fill="white" stroke="#e5e7eb" stroke-width="2"/>
+    <!-- Excel grid -->
+    <line x1="20" y1="15" x2="20" y2="45" stroke="#d1d5db" stroke-width="1"/>
+    <line x1="40" y1="15" x2="40" y2="45" stroke="#d1d5db" stroke-width="1"/>
+    <line x1="60" y1="15" x2="60" y2="45" stroke="#d1d5db" stroke-width="1"/>
+    <line x1="10" y1="25" x2="70" y2="25" stroke="#d1d5db" stroke-width="1"/>
+    <line x1="10" y1="35" x2="70" y2="35" stroke="#d1d5db" stroke-width="1"/>
+    
+    <text x="40" y="12" text-anchor="middle" fill="#1f2937" font-family="Arial" font-size="10" font-weight="bold">Excel Data</text>
+    
+    <!-- Arrow to automation -->
+    <path d="M80 30 Q150 30 180 80" stroke="#10b981" stroke-width="3" fill="none" marker-end="url(#arrowhead)" opacity="0.8"/>
+  </g>
+
+  <!-- Multiple phones representing bulk messaging -->
+  <g transform="translate(550, 250)">
+    <!-- Phone 1 -->
+    <rect x="0" y="0" width="60" height="100" rx="10" fill="url(#phoneGradient)" stroke="#cbd5e1" stroke-width="1"/>
+    <rect x="5" y="8" width="50" height="84" rx="6" fill="url(#screenGradient)"/>
+    <rect x="5" y="8" width="50" height="15" rx="6" fill="url(#whatsappGreen)"/>
+    <circle cx="15" cy="15" r="3" fill="white"/>
+    
+    <!-- Phone 2 (offset) -->
+    <rect x="20" y="15" width="60" height="100" rx="10" fill="url(#phoneGradient)" stroke="#cbd5e1" stroke-width="1"/>
+    <rect x="25" y="23" width="50" height="84" rx="6" fill="url(#screenGradient)"/>
+    <rect x="25" y="23" width="50" height="15" rx="6" fill="url(#whatsappGreen)"/>
+    <circle cx="35" cy="30" r="3" fill="white"/>
+    
+    <!-- Phone 3 (offset more) -->
+    <rect x="40" y="30" width="60" height="100" rx="10" fill="url(#phoneGradient)" stroke="#cbd5e1" stroke-width="1"/>
+    <rect x="45" y="38" width="50" height="84" rx="6" fill="url(#screenGradient)"/>
+    <rect x="45" y="38" width="50" height="15" rx="6" fill="url(#whatsappGreen)"/>
+    <circle cx="55" cy="45" r="3" fill="white"/>
+    
+    <text x="50" y="155" text-anchor="middle" fill="#6b7280" font-family="Arial" font-size="12" font-weight="bold">Bulk Messaging</text>
+  </g>
+
+  <!-- Analytics/Dashboard -->
+  <g transform="translate(100, 350)">
+    <rect x="0" y="0" width="140" height="90" rx="8" fill="white" stroke="#e5e7eb" stroke-width="2"/>
+    <text x="70" y="18" text-anchor="middle" fill="#1f2937" font-family="Arial" font-size="12" font-weight="bold">Analytics Dashboard</text>
+    
+    <!-- Chart bars -->
+    <rect x="20" y="60" width="8" height="20" fill="#3b82f6"/>
+    <rect x="35" y="50" width="8" height="30" fill="#10b981"/>
+    <rect x="50" y="45" width="8" height="35" fill="#f59e0b"/>
+    <rect x="65" y="55" width="8" height="25" fill="#ef4444"/>
+    <rect x="80" y="40" width="8" height="40" fill="#8b5cf6"/>
+    
+    <!-- Success metrics -->
+    <circle cx="100" cy="45" r="15" fill="#10b981" opacity="0.2"/>
+    <text x="100" y="50" text-anchor="middle" fill="#10b981" font-family="Arial" font-size="10" font-weight="bold">98%</text>
+    <text x="100" y="68" text-anchor="middle" fill="#6b7280" font-family="Arial" font-size="8">Delivery</text>
+  </g>
+
+  <!-- Connecting lines/flow -->
+  <path d="M430 180 Q500 200 500 280" stroke="#10b981" stroke-width="2" fill="none" opacity="0.6" stroke-dasharray="5,5"/>
+  <path d="M240 350 Q350 320 480 300" stroke="#3b82f6" stroke-width="2" fill="none" opacity="0.6" stroke-dasharray="5,5"/>
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#10b981"/>
+    </marker>
+  </defs>
+
+  <!-- Floating success indicators -->
+  <g transform="translate(300, 400)">
+    <circle cx="0" cy="0" r="12" fill="#10b981" filter="url(#glow)"/>
+    <path d="M-4 0 L-1 3 L4 -3" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <g transform="translate(500, 180)">
+    <circle cx="0" cy="0" r="10" fill="#3b82f6" filter="url(#glow)"/>
+    <rect x="-3" y="-3" width="6" height="6" fill="white" rx="1"/>
+  </g>
+
+  <!-- WhatsApp logo in corner -->
+  <g transform="translate(650, 450)">
+    <circle cx="25" cy="25" r="25" fill="url(#whatsappGreen)" filter="url(#glow)"/>
+    <circle cx="25" cy="25" r="18" fill="white"/>
+    <path d="M17 25 Q17 17 25 17 Q33 17 33 25 Q33 33 25 33 Q20 33 17 30 L15 35 L20 33 Q22 31 25 31 Q31 31 31 25 Q31 19 25 19 Q19 19 19 25 Q19 28 21 30" fill="url(#whatsappGreen)" stroke="url(#whatsappGreen)" stroke-width="0.5"/>
+  </g>
+
+  <!-- Title text -->
+  <text x="400" y="40" text-anchor="middle" fill="#1f2937" font-family="Arial" font-size="24" font-weight="bold">WhatsApp Business Automation</text>
+</svg>
