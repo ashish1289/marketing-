@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
@@ -33,14 +32,14 @@ const Navbar = () => {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5, delay: 0.3 }}
                 >
-                    <li className="cursor-pointer"><a href="#hero" style={linkStyle}>Home</a></li>
-                    <li className="cursor-pointer"><a href="#affiliate" style={linkStyle}>Affiliate</a></li>
-                    <li className="cursor-pointer"><a href="#pricing" style={linkStyle}>Pricing</a></li>
-                    <li className="cursor-pointer"><a href="#integration" style={linkStyle}>Integration</a></li>
+                    <li><a href="#hero" style={linkStyle}>Home</a></li>
+                    <li><a href="#affiliate" style={linkStyle}>Affiliate</a></li>
+                    <li><a href="#pricing" style={linkStyle}>Pricing</a></li>
+                    <li><a href="#integration" style={linkStyle}>Integration</a></li>
                 </motion.ul>
 
                 {/* Register Button - Desktop */}
-                <Link to="" style={linkStyle}>
+                <a href="http://localhost:3001" style={linkStyle}>
                     <motion.button
                         className="bg-white text-black px-4 py-1 rounded hidden md:block cursor-pointer"
                         initial={{ opacity: 0, scale: 0.8 }}
@@ -49,7 +48,7 @@ const Navbar = () => {
                     >
                         Register
                     </motion.button>
-                </Link>
+                </a>
 
                 {/* Hamburger Icon */}
                 <div className="md:hidden">
@@ -85,7 +84,9 @@ const Navbar = () => {
                                 <li><a href="#pricing" style={linkStyle}>Pricing</a></li>
                                 <li><a href="#integration" style={linkStyle}>Integration</a></li>
                             </ul>
-                            <button className="bg-white text-black px-4 py-1 rounded">Register</button>
+                            <a href="http://localhost:3001" style={linkStyle}>
+                                <button className="bg-white text-black px-4 py-1 rounded">Register</button>
+                            </a>
                         </div>
                     </motion.div>
                 )}
